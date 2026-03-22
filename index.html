@@ -4,224 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA 4 - Federação Inter-multi-omniversal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-cosmic: #05081C;
-            --text-white: #F5F5F5;
-            --quantum-amber: #FFC300;
-            --solar-flare: #FF8D00;
-            --ultraviolet: #6A0DAD;
-            --font-titles: 'Montserrat', sans-serif;
-            --font-body: 'Inter', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg-cosmic);
-            color: var(--text-white);
-            font-family: var(--font-body);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Efeito de nebulosa no fundo */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(106, 13, 173, 0.1) 0%, transparent 50%);
-            z-index: -1;
-        }
-
-        header {
-            padding: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .logo {
-            font-family: var(--font-titles);
-            font-size: 2rem;
-            letter-spacing: -1px;
-            color: var(--text-white);
-        }
-
-        .logo span {
-            color: var(--quantum-amber);
-            text-shadow: 0 0 15px var(--solar-flare);
-        }
-
-        nav a {
-            color: var(--text-white);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--quantum-amber);
-        }
-
-        .hero {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 1rem;
-            position: relative;
-        }
-
-        /* Órbita decorativa inspirada no troféu */
-        .orbit-bg {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border: 1px solid rgba(255, 195, 0, 0.2);
-            border-radius: 50%;
-            z-index: -1;
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .hero h1 {
-            font-family: var(--font-titles);
-            font-size: clamp(3rem, 10vw, 6rem);
-            line-height: 0.9;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            color: rgba(245, 245, 245, 0.8);
-            margin-bottom: 2rem;
-        }
-
-        .btn-primary {
-            background-color: var(--quantum-amber);
-            color: var(--bg-cosmic);
-            padding: 1rem 2.5rem;
-            font-family: var(--font-titles);
-            text-decoration: none;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-radius: 4px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 195, 0, 0.4);
-        }
-
-        .section-about {
-            padding: 5rem 2rem;
-            background: rgba(255, 255, 255, 0.02);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .grid-rules {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            transition: border-color 0.3s;
-        }
-
-        .card:hover {
-            border-color: var(--ultraviolet);
-        }
-
-        .card h3 {
-            font-family: var(--font-titles);
-            color: var(--quantum-amber);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .glitch-text {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Sutil efeito de brilho no texto "Absurdo" */
-        .highlight {
-            color: var(--ultraviolet);
-            text-shadow: 0 0 10px var(--ultraviolet);
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="corpo-site">
 
-    <header>
-        <div class="logo">FIFA <span>4</span></div>
-        <nav>
-            <a href="#">Sobre</a>
-            <a href="#">Regras</a>
-            <a href="#">Draft</a>
-            <a href="#">Estádios</a>
+    <header class="cabecalho-principal">
+        <div class="logotipo">FIFA <span class="destaque-numero">4</span></div>
+        <nav class="barra-navegacao">
+            <ul class="lista-navegacao">
+                <li><a href="sobre.html" class="link-menu">Sobre</a></li>
+                <li><a href="regras.html" class="link-menu">Regras</a></li>
+                <li><a href="draft.html" class="link-menu">Draft</a></li>
+                <li><a href="estadios.html" class="link-menu">Estádios</a></li>
+                <li><a href="time1.html" class="link-menu">Time 1</a></li>
+                <li><a href="time2.html" class="link-menu">Time 2</a></li>
+                <li><a href="time3.html" class="link-menu">Time 3</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="orbit-bg"></div>
-        <h1>FEDERAÇÃO <br> <span class="highlight">INTER-MULTI</span> <br> OMNIVERSAL</h1>
-        <p>O campeonato que define o inquestionável Campeão Inter-multi-omniversal de Futebol.</p>
-        <a href="#rules" class="btn-primary">Explorar a 4ª Versão</a>
-    </section>
-
-    <section id="rules" class="section-about">
-        <div class="container">
-            <h2 style="font-family: var(--font-titles); font-size: 2.5rem; text-transform: uppercase;">Regras de Desempate <span class="highlight">Absurdas</span></h2>
-            <div class="grid-rules">
-                <div class="card">
-                    <h3>Gol de Ouro</h3>
-                    <p>Em caso de empate entre o 2º e 3º colocados na fase de liga, a realidade se dobra em uma partida única onde o primeiro a marcar encerra a existência do adversário no torneio.</p>
-                </div>
-                <div class="card">
-                    <h3>Ímpar ou Par</h3>
-                    <p>Para definir o líder entre 1º e 2º colocados empatados, recorremos à lei ancestral do acaso: uma melhor de 3 no Ímpar ou Par.</p>
-                </div>
-                <div class="card">
-                    <h3>O Troféu</h3>
-                    <p>O Troféu de Schrödinger existe e não existe simultaneamente até que o apito final da segunda partida da decisão seja ouvido.</p>
-                </div>
+    <main class="conteudo-principal">
+        <section class="banner-destaque">
+            <div class="circulo-quantico"></div>
+            <h1 class="titulo-impacto">FEDERAÇÃO <br> <span class="texto-gradiente">INTER-MULTI</span> <br> OMNIVERSAL</h1>
+            <p class="slogan-campeonato">O campeonato que define o inquestionável Campeão Inter-multi-omniversal de Futebol Absurdo.</p>
+            <div class="grupo-botoes">
+                <a href="sobre.html" class="botao-primario">Explorar História</a>
+                <a href="draft.html" class="botao-secundario">Ver Jogadores</a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="secao-info">
+            <h2 class="titulo-secao">A 4ª Versão da Realidade</h2>
+            <div class="grade-informativa">
+                <article class="cartao-informativo">
+                    <h3 class="titulo-cartao">O Troféu</h3>
+                    <p>O prêmio máximo que desafia as leis da física. Conquiste o Troféu de Schrödinger, onde a vitória existe e não existe até o apito final.</p>
+                </article>
+                <article class="cartao-informativo">
+                    <h3 class="titulo-cartao">O Formato</h3>
+                    <p>3 times, 14 jogadores draftados por equipe e uma busca incessante pela glória absoluta no gramado interdimensional.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-final">
+        <p>&copy; 2026 FIFA 4 - Federação de Futebol Absurdo. Todos os direitos reservados nas múltiplas dimensões.</p>
+    </footer>
 
 </body>
 </html>
