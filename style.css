@@ -191,3 +191,83 @@
     color: rgb(100, 100, 120);
     border-top: 1px solid rgb(30, 30, 50);
 }
+/* Estilos Específicos para a Página Sobre */
+
+.secao-titulo-pagina {
+    padding: 80px 5%;
+    background: linear-gradient(to bottom, rgb(10, 15, 45), var(--fundo-profundo));
+    text-align: center;
+}
+
+.titulo-grande {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(50px, 10vw, 120px);
+    color: var(--texto-principal);
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: var(--ambar-quantico);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.secao-texto-historia {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-centralizado {
+    max-width: 800px;
+}
+
+.bloco-narrativo {
+    margin-bottom: 50px;
+}
+
+.titulo-artigo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--ambar-quantico);
+    padding-left: 20px;
+}
+
+.bloco-narrativo p {
+    font-size: 18px;
+    color: rgb(200, 200, 210);
+    margin-bottom: 20px;
+}
+
+.texto-realce {
+    color: var(--texto-principal);
+    background-color: var(--roxo-misterio);
+    padding: 2px 8px;
+    font-weight: 700;
+}
+
+.divisor-quantico {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, var(--ambar-quantico), transparent);
+    margin: 60px 0;
+    opacity: 0.3;
+}
+
+.cartao-missao {
+    background-color: rgb(15, 20, 50);
+    border: 1px solid rgb(106, 13, 173);
+    padding: 40px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cartao-missao .titulo-cartao {
+    color: var(--roxo-misterio);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
