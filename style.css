@@ -354,3 +354,152 @@
     margin-top: 15px;
     font-style: italic;
 }
+/* Definição das Novas Cores de Destaque (RGB) */
+:root {
+    --azul-defensor: rgb(137, 207, 240);    /* Azul Bebê */
+    --verde-meio: rgb(57, 255, 20);         /* Verde Fluorescente */
+    --vermelho-atacante: rgb(255, 71, 71);   /* Vermelho Vivo */
+    /* --ambar-quantico (Goleiro) já existe no arquivo base */
+}
+
+/* Estilos Específicos para a Página Draft */
+
+.secao-draft {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.grade-jogadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Base do Card Brutalista */
+.cartao-jogador {
+    background-color: var(--cinza-suave);
+    border: 1px solid rgb(60, 60, 80);
+    padding: 20px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+/* Efeito Hover Geral (Glow Quântico) */
+.cartao-jogador:hover {
+    transform: translateY(-5px);
+}
+
+/* Área da Imagem Placeholder */
+.area-imagem-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(20, 25, 45);
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(60, 60, 80);
+    font-family: 'Montserrat', sans-serif;
+    border: 1px dashed rgb(60, 60, 80);
+}
+
+/* Cabeçalho do Card */
+.cabecalho-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.posicao-sigla {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 3px 8px;
+    color: var(--fundo-profundo);
+    background-color: var(--texto-principal);
+    border-radius: 2px;
+}
+
+.nome-jogador {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--texto-principal);
+}
+
+/* Atributos */
+.lista-atributos {
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.lista-atributos li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid rgb(40, 45, 65);
+}
+
+.atr-nome {
+    color: rgb(160, 160, 170);
+    font-weight: 700;
+}
+
+.atr-valor {
+    color: var(--texto-principal);
+    font-weight: 700;
+}
+
+/* --- Classes Específicas por Posição (Cores e Brilhos) --- */
+
+/* GOLEIRO (Amarelo Âmbar) */
+.jogador-goleiro .posicao-sigla {
+    background-color: var(--ambar-quantico);
+}
+.jogador-goleiro:hover {
+    border-color: var(--ambar-quantico);
+    box-shadow: 0px 0px 30px rgba(255, 195, 0, 0.3);
+}
+.jogador-goleiro .area-imagem-placeholder {
+    border-color: rgba(255, 195, 0, 0.2);
+}
+
+/* DEFENSOR (Azul Bebê) */
+.jogador-defensor .posicao-sigla {
+    background-color: var(--azul-defensor);
+}
+.jogador-defensor:hover {
+    border-color: var(--azul-defensor);
+    box-shadow: 0px 0px 30px rgba(137, 207, 240, 0.3);
+}
+.jogador-defensor .area-imagem-placeholder {
+    border-color: rgba(137, 207, 240, 0.2);
+}
+
+/* MEIO (Verde Fluorescente) */
+.jogador-meio .posicao-sigla {
+    background-color: var(--verde-meio);
+}
+.jogador-meio:hover {
+    border-color: var(--verde-meio);
+    box-shadow: 0px 0px 30px rgba(57, 255, 20, 0.3);
+}
+.jogador-meio .area-imagem-placeholder {
+    border-color: rgba(57, 255, 20, 0.2);
+}
+
+/* ATACANTE (Vermelho Vivo) */
+.jogador-atacante .posicao-sigla {
+    background-color: var(--vermelho-atacante);
+}
+.jogador-atacante:hover {
+    border-color: var(--vermelho-atacante);
+    box-shadow: 0px 0px 30px rgba(255, 71, 71, 0.3);
+}
+.jogador-atacante .area-imagem-placeholder {
+    border-color: rgba(255, 71, 71, 0.2);
+}
