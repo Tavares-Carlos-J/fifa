@@ -7,7 +7,7 @@ const categorias = [
 
 const times = {
     'livre': { nome: '*', classe: '' },
-    'pleiades': { nome: 'Plêiades', classe: 'time-rambiassu' },
+    'pleiades': { nome: 'Plêiades', classe: 'time-roxo' },
     'rambiassu': { nome: 'Rambiassu', classe: 'time-rambiassu' },
     'itapuri': { nome: 'Itapuri', classe: 'time-itapuri' }
 };
