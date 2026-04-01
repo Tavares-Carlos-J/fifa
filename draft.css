@@ -41,6 +41,7 @@
 }
 
 /* Grade cravada em 3 colunas x 5 linhas */
+/* Grade cravada em 3 colunas x 5 linhas */
 .grade-matriz {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important; /* Força 3 colunas sempre */
@@ -50,6 +51,8 @@
     max-width: 900px;
     margin: 0 auto;
 }
+
+/* Célula do Jogador Ajustada para Mobile */
 
 /* Célula do Jogador Ajustada para Mobile */
 .celula-jogador {
@@ -73,25 +76,7 @@
 }
 
 
-/* Célula do Jogador */
-.celula-jogador {
-    background-color: var(--fundo-profundo);
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    padding: 20px 10px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(12px, 3vw, 16px);
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80px;
-}
+/
 
 /* Classes Dinâmicas Injetadas pelo JS */
 .celula-jogador.time-pleiades {
