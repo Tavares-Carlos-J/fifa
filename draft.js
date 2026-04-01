@@ -1,4 +1,3 @@
-// Dados iniciais e times disponíveis
 const categorias = [
     { id: 'goleiros', nome: '/ Goleiros \\' },
     { id: 'defensores', nome: '/ Defensores \\' },
@@ -13,12 +12,18 @@ const times = {
     'itapuri': { nome: 'Itapuri', classe: 'time-itapuri' }
 };
 
-// Gera 15 jogadores para cada categoria e guarda as escolhas (Estado)
+const nomesJogadores = {
+    'goleiros': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Muralha II", "Fortaleza"],
+    'defensores': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
+    'meias': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
+    'atacantes': ["Carlos", "Artilheiro", "Flecha", "Matador", "Atacante 5", "Atacante 6", "Atacante 7", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"]
+};
+
 const estadoDraft = {};
 categorias.forEach(cat => {
     estadoDraft[cat.id] = [];
     for(let i = 0; i < 15; i++) {
-        estadoDraft[cat.id].push({ nome: `Jogador ${i + 1}`, time: 'livre' });
+        estadoDraft[cat.id].push({ nome: nomesJogadores[cat.id][i], time: 'livre' });
     }
 });
 
@@ -37,12 +42,10 @@ function renderizarGrade() {
     const jogadores = estadoDraft[categoriaAtual.id];
 
     jogadores.forEach((jogador, index) => {
-        // Cria a célula
         const celula = document.createElement('div');
         celula.className = `celula-jogador ${times[jogador.time].classe}`;
         celula.textContent = jogador.nome;
 
-        // Cria o menu de dropdown
         const menu = document.createElement('div');
         menu.className = 'menu-opcoes';
 
@@ -52,7 +55,7 @@ function renderizarGrade() {
             opcao.textContent = times[timeKey].nome;
             
             opcao.addEventListener('click', (e) => {
-                e.stopPropagation(); // Impede que feche na hora de clicar
+                e.stopPropagation(); 
                 selecionarTime(categoriaAtual.id, index, timeKey);
             });
             menu.appendChild(opcao);
@@ -60,9 +63,7 @@ function renderizarGrade() {
 
         celula.appendChild(menu);
 
-        // Abre/Fecha o menu ao clicar
         celula.addEventListener('click', () => {
-            // Fecha todos os outros antes de abrir
             document.querySelectorAll('.celula-jogador').forEach(c => {
                 if(c !== celula) c.classList.remove('ativo');
             });
@@ -76,26 +77,23 @@ function renderizarGrade() {
 function selecionarTime(idCategoria, indexJogador, novoTime) {
     const jogadoresCategoria = estadoDraft[idCategoria];
     
-    // Se for tirar o jogador de um time, permite sempre
     if(novoTime !== 'livre') {
-        // Verifica o limite de 2 jogadores
         let contagemTime = 0;
         jogadoresCategoria.forEach(j => {
             if(j.time === novoTime) contagemTime++;
         });
 
         if(contagemTime >= 2) {
-            alert(`Regra da Federação: O time ${times[novoTime].nome} já possui 2 jogadores nesta categoria!`);
+            alert(`Atenção: O time ${times[novoTime].nome} já possui 2 jogadores na categoria ${categorias.find(c => c.id === idCategoria).nome.replace(/[\/\\]/g, '').trim()}!`);
             document.querySelectorAll('.celula-jogador').forEach(c => c.classList.remove('ativo'));
             return;
         }
     }
 
     jogadoresCategoria[indexJogador].time = novoTime;
-    renderizarGrade(); // Recarrega a grade para atualizar cores
+    renderizarGrade(); 
 }
 
-// Navegação entre categorias
 btnAnterior.addEventListener('click', () => {
     indiceCategoriaAtual = (indiceCategoriaAtual - 1 + categorias.length) % categorias.length;
     renderizarGrade();
@@ -106,12 +104,10 @@ btnProximo.addEventListener('click', () => {
     renderizarGrade();
 });
 
-// Fechar menus se clicar fora
 document.addEventListener('click', (e) => {
     if(!e.target.closest('.celula-jogador')) {
         document.querySelectorAll('.celula-jogador').forEach(c => c.classList.remove('ativo'));
     }
 });
 
-// Inicia a aplicação
 renderizarGrade();
