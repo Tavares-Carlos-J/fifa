@@ -43,8 +43,8 @@
 /* Grade 3 colunas x 5 linhas */
 .grade-matriz {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
     gap: 15px;
     width: 100%;
     max-width: 900px;
