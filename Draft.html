@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Interdimensional - FIFA 4</title>
+    <link rel="stylesheet" href="draft-style.css">
+    <link rel="stylesheet" href="draft.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="corpo-site">
+
+    <header class="cabecalho-principal">
+        <div class="logotipo">FIFA <span class="destaque-numero">4</span></div>
+        <nav class="barra-navegacao">
+            <ul class="lista-navegacao">
+                <li><a href="../index.html" class="link-menu">Início</a></li>
+                <li><a href="../sobre.html" class="link-menu">Sobre</a></li>
+                <li><a href="../regras.html" class="link-menu">Regras</a></li>
+                <li><a href="draft.html" class="link-menu">Draft</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="secao-titulo-pagina">
+            <h1 class="titulo-grande">MERCADO ATIVO</h1>
+            <p class="subtitulo">Gerenciador de Janela - Limite de 2 Jogadores por Categoria</p>
+        </section>
+
+        <section class="secao-draft-interativo">
+            <div class="controle-categoria">
+                <button id="btn-anterior" class="seta-controle">&lt; --</button>
+                <h2 id="nome-categoria" class="titulo-categoria">CATEGORIA</h2>
+                <button id="btn-proximo" class="seta-controle">-- &gt;</button>
+            </div>
+
+            <div id="grade-draft" class="grade-matriz"></div>
+        </section>
+    </main>
+
+    <footer class="rodape-final">
+        <p>&copy; 2026 FIFA 4 - Mercado sujeito a anomalias temporais.</p>
+    </footer>
+
+    <script src="draft.js"></script>
+</body>
+</html>
