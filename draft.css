@@ -9,19 +9,22 @@
 .controle-categoria {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .seta-controle {
     background: transparent;
     border: none;
     color: var(--ambar-quantico);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 900;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     transition: transform 0.2s;
+    padding: 0 15px;
 }
 
 .seta-controle:hover {
@@ -30,57 +33,60 @@
 
 .titulo-categoria {
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: clamp(20px, 5vw, 32px);
     color: var(--texto-principal);
     text-transform: uppercase;
-    min-width: 250px;
+    min-width: 220px;
     text-align: center;
 }
 
-/* Grade 3x5 */
 /* Grade 3 colunas x 5 linhas */
 .grade-matriz {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
-    grid-template-rows: repeat(5, auto);   /* Define 5 linhas */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 15px;
     width: 100%;
-    max-width: 900px; /* Ajustado para as 3 colunas não ficarem esticadas demais */
+    max-width: 900px;
 }
-
 
 /* Célula do Jogador */
 .celula-jogador {
-    background-color: var(--cinza-suave);
+    background-color: var(--fundo-profundo);
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
-    padding: 25px 15px;
+    padding: 20px 10px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: clamp(12px, 3vw, 16px);
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
 }
 
 /* Classes Dinâmicas Injetadas pelo JS */
 .celula-jogador.time-pleiades {
-    border-color: #d7b4ff; /* Roxo Claro */
+    border-color: #d7b4ff;
     color: #d7b4ff;
-    box-shadow: 0px 0px 15px rgba(215, 180, 255, 0.2);
+    box-shadow: inset 0px 0px 15px rgba(215, 180, 255, 0.1);
 }
 
 .celula-jogador.time-rambiassu {
-    border-color: #ff3333; /* Vermelho Vivo */
+    border-color: #ff3333;
     color: #ff3333;
-    box-shadow: 0px 0px 15px rgba(255, 51, 51, 0.2);
+    box-shadow: inset 0px 0px 15px rgba(255, 51, 51, 0.1);
 }
 
 .celula-jogador.time-itapuri {
-    border-color: #ff8c00; /* Laranja Vibrante */
+    border-color: #ff8c00;
     color: #ff8c00;
-    box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.2);
+    box-shadow: inset 0px 0px 15px rgba(255, 140, 0, 0.1);
 }
 
 /* Menu Dropdown de Opções */
@@ -89,8 +95,8 @@
     top: 100%;
     left: -2px;
     width: calc(100% + 4px);
-    background-color: var(--fundo-profundo);
-    border: 1px solid rgb(60, 60, 80);
+    background-color: rgb(15, 20, 45);
+    border: 2px solid var(--ambar-quantico);
     display: none;
     flex-direction: column;
     z-index: 10;
@@ -101,13 +107,14 @@
 }
 
 .opcao-time {
-    padding: 12px;
+    padding: 15px 10px;
     border-bottom: 1px solid rgb(40, 45, 65);
-    font-size: 12px;
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
 .opcao-time:hover {
-    background-color: rgb(30, 35, 50);
+    background-color: var(--cinza-suave);
 }
 
 .opcao-time:last-child {
