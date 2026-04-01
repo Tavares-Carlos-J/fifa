@@ -1,8 +1,14 @@
 const categorias = [
-    { id: 'goleiros', nome: '/ Goleiros \\' },
-    { id: 'defensores', nome: '/ Defensores \\' },
-    { id: 'meias', nome: '/ Meias \\' },
-    { id: 'atacantes', nome: '/ Atacantes \\' }
+    { id: '1', nome: '/ Goleiros \\' },
+    { id: '2', nome: '/ Defensores \\' },
+    { id: '3', nome: '/ Meias \\' },
+    { id: '4', nome: '/ Atacantes \\' },
+    { id: '5', nome: '/ Treinadores \\' },
+    { id: '6', nome: '/ Arbitragem \\' },
+    { id: '7', nome: '/ Estádios \\' },
+    { id: '8', nome: '/ Torcidas \\' },
+    { id: '9', nome: '/ Troféus \\' },
+    { id: '10', nome: '/ Categorias de Base \\' }
 ];
 
 const times = {
@@ -13,11 +19,16 @@ const times = {
 };
 
 const nomesJogadores = {
-    'goleiros': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    'defensores': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
-    'meias': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
-    'Arrombados': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    'atacantes': ["Carlos", "Artilheiro", "Flecha", "Matador", "Atacante 5", "Atacante 6", "Atacante 7", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"]
+    '1': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
+    '2': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
+    '3': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
+    '4': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
+    '5': ["Carlos", "Artilheiro", "Flecha", "Matador", "Atacante 5", "Atacante 6", "Atacante 7", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"]
+    '1': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
+    '2': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
+    '3': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
+    '4': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
+    '5': ["Carlos", "Artilheiro", "Flecha", "Matador", "Atacante 5", "Atacante 6", "Atacante 7", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"]
 };
 
 const estadoDraft = {};
