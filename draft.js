@@ -15,7 +15,7 @@ const times = {
     'livre': { nome: '*', classe: '' },
     'pleiades': { nome: 'Plêiades', classe: 'time-rambiassa' },
     'rambiassu': { nome: 'Rambiassu', classe: 'time-rambiassu' },
-    'itapuri': { nome: 'Itapuri', classe: 'time-itapuri' }
+    'itapuri': { nome: 'Acafri', classe: 'time-itapuri' }
 };
 
 const nomesJogadores = {
