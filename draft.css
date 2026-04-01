@@ -90,6 +90,11 @@
     color: #ff3333;
     box-shadow: inset 0px 0px 15px rgba(255, 51, 51, 0.1);
 }
+.celula-jogador.time-rambiassa {
+    border-color: #d7b4ff;
+    color: #d7b4ff;
+    box-shadow: inset 0px 0px 15px rgba(215, 180, 255, 0.1);
+}
 
 .celula-jogador.time-itapuri {
     border-color: #ff8c00;
