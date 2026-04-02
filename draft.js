@@ -1,16 +1,18 @@
 const categorias = [
     { id: '1', nome: '/ Goleiros \\' },
-    { id: '2', nome: '/ Defensores \\' },
-    { id: '3', nome: '/ Meias \\' },
-    { id: '4', nome: '/ Atacantes \\' },
-    { id: '5', nome: '/ Treinadores \\' },
-    { id: '6', nome: '/ Arbitragem \\' },
-    { id: '7', nome: '/ Estádios \\' },
-    { id: '8', nome: '/ Torcidas \\' },
-    { id: '9', nome: '/ Troféus \\' },
-    { id: '10', nome: '/ Categorias de Base \\' }
+    { id: '2', nome: '/ Sentimentos e Vontades \\' },
+    { id: '3', nome: '/ Locais, Objetos e Veículos \\' },
+    { id: '4', nome: '/ Políticos e Impacto \\' },
+    { id: '5', nome: '/ Pensadores \\' },
+    { id: '6', nome: '/ Monstros e Deuses \\' },
+    { id: '7', nome: '/ Animais \\' },
+    { id: '8', nome: '/ Esportes \\' },
+    { id: '9', nome: '/ Cultura Pop \\' },
+    { id: '10', nome: '/ Animes e Heróis \\' },
+    { id: '11', nome: '/ Séries e Filmes \\' },
+    { id: '12', nome: '/ Games \\' },
+    { id: '13', nome: '/ Piadas Internas \\' }
 ];
-
 const times = {
     'livre': { nome: '*', classe: '' },
     'pleiades': { nome: 'Plêiades', classe: 'time-rambiassa' },
@@ -19,16 +21,19 @@ const times = {
 };
 
 const nomesJogadores = {
-    '1': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    '2': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
-    '3': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
-    '4': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    '5': ["Carlos", "Artilheiro", "Flecha", "Matador", "Atacante 5", "Atacante 6", "Atacante 7", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"],
-    '6': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    '7': ["Chandão", "Xerife", "Zagueiro 3", "Rocha", "Trator", "Cadeado", "Segurança", "Zagueiro 8", "Zagueiro 9", "Zagueiro 10", "Zagueiro 11", "Zagueiro 12", "Zagueiro 13", "Zagueiro 14", "Zagueiro 15"],
-    '8': ["Sháylon", "Maestro", "Motor", "Bússola", "Meia 5", "Meia 6", "Meia 7", "Meia 8", "Meia 9", "Meia 10", "Meia 11", "Meia 12", "Meia 13", "Meia 14", "Meia 15"],
-    '9': ["Muralha", "Paredão", "Luva", "Reflexo", "Aranha", "Gato", "Defesa", "Mão de Ferro", "Bloqueio", "Escudo", "Guardião", "Voador", "Elástico", "Cássio", "Fortaleza"],
-    '10': ["Teste", "Relacionado", "Teste Relacionado", "Teste ao Tamanho", "Teste relacionado ao nome", "Teste relacionado ao tamanho do nome", "Teste Relacionado ao conceito de ter um grande tamanho de nome", "Atacante 8", "Atacante 9", "Atacante 10", "Atacante 11", "Atacante 12", "Atacante 13", "Atacante 14", "Atacante 15"]
+    '1': ["Cronos", "Endo", "Galvão Bueno", "Prudence", "Boneco de Posto", "Leviatã", "Terêncio", "Mulher Elástica", "Canarinho Tranquilo", "Omnitraxos Prime", "Município de São Paulo", "Palpatine", "Aurélio Sol", "Cássio Queixo rubro", "Napoleão Hill"],
+    '2': ["O Conceito de Fusão", "A Vontade de Esfolar uma Buceta", "Reprodução Assexuada", "O Crescimento Comicamente Rápido", "O Curso", "O PIB da Zâmbia Bruto", "Caos", "O Amor Não Recíproco", "O Medo Constante do Fracasso", "Carlos", "A Morena", "Depressão2", "vazio", "vazio", "vazio"],
+    '3': ["Disjuntor", "Barragem de lil brumado", "Excalibur", "Muralha da China", "Wifi", "Avião do Mercado Livre", "Uno com Escadas", "Robô de arco e flecha da Coreia do Sul", "Mac do Carros", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"],
+    '4': ["Hun Manet", "Pol Pot", "Benito Mussolini", "Trump", "Gen. Costa e Silva", "Qin Shi", "Bolsonaro", "Ousama Bilanden", "Rainha Elizabeth", "Enéias", "Joana d'Arc", "vazio", "vazio", "vazio", "vazio"],
+    '5': ["Van Gogh", "Filósofo Píton", "Charles Darwin", "Newton", "Schrödinger", "Nietzsche", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"], 
+    '6': ["Chtullhu", "Eterna", "Dionisio", "Noé", "Hermes", "Papai Noel", "Gilgamesh", "Tanatos", "Anubis", "Moisés", "Adão", "Zéfiro", "Tupã", "Wukong", "vazio"],
+    '7': ["Espinosauro", "Gorila", "Rinoceronte", "Papa Léguas", "Gato a Jato", "Pelé (O animal)", "Avestruz", "Boto Cor de Rosa", "Tina T-Rex", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"], 
+    '8': ["Daronco", "Popó", "Ramon Dino", "Wilton Pereira Sampaio", "Bobby Charlton", "Yusuf Dikec", "Airtonmar", "Lukaku", "Emiliano Sala", "George Best", "El Merdinha", "Al Fodão", "Cecilho Jamal", "vazio", "vazio"],
+    '9': ["P.diddy", "Kid Bengala", "Cariane Walter White", "Dr. Zacharias Kalil", "Terry Crews", "Luva de Pedreiro", "Michael Jackson", "Celso Portiolli", "Elvis Presley", "Thais Carla de biquíni", "vazio", "vazio", "vazio", "vazio", "vazio"], 
+    '10': ["Yamato", "Inumaki", "Acnologia", "Magneto", "Jin Mori", "Mine Dio Brando", "Yugi", "Madara", "Takezo", "Reinhard", "Mística", "Gelado", "O Dragão Supremo de Olhos Azuis", "Roniejo", "vazio"], 
+    '11': ["Homerzila", "Bonequinha do Round 6", "Sugilite", "Tamatoa", "Chapolin Colorado", "Djin Djarin", "Barbie", "Máximo", "Sharkboy", "Anakin Skywalker", "Darth Jar Jar", "Jogador 456", "Chaves", "Penny Fitzgerald", "vazio"],
+    '12': ["Reptile", "Blanka", "E-Honda", "Donkey Kong", "El Primo", "Mineirinho", "Steve", "Enderman", "Herobrine", "Doodieman", "vazio", "vazio", "vazio", "vazio", "vazio"],
+    '13': ["Valdo", "Mikaio", "Zuletinha", "Alfa Omega", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"]
 };
 
 const estadoDraft = {};
