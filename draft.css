@@ -78,13 +78,6 @@
 
 /
 
-/* Classes Dinâmicas Injetadas pelo JS */
-.celula-jogador.time-roxo {
-    border-color: #d7b4ff;
-    color: #d7b4ff;
-    box-shadow: inset 0px 0px 15px rgba(215, 180, 255, 0.1);
-}
-
 .celula-jogador.time-rambiassu {
     border-color: rgba(51, 51, 255, 0.1);
     color: rgba(51, 51, 255, 0.1);
