@@ -76,10 +76,11 @@
 }
 
 
-/
+/* Times */
+
 
 .celula-jogador.time-rambiassu {
-    border-color: rgba(51, 51, 255, 0.1);
+    border-color: rgb(51, 51, 255);
     color: rgba(51, 51, 255, 0.1);
     box-shadow: inset 0px 0px 15px rgba(51, 51, 255, 0.1);
 }
