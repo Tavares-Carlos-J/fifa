@@ -22,18 +22,18 @@ const times = {
 
 const nomesJogadores = {
     '1': ["Cronos", "Endo", "Galvão Bueno", "Prudence", "Boneco de Posto", "Leviatã", "Terêncio", "Mulher Elástica", "Canarinho Tranquilo", "Omnitraxos Prime", "Município de São Paulo", "Palpatine", "Aurélio Sol", "Cássio Queixo rubro", "Napoleão Hill"],
-    '2': ["O Conceito de Fusão", "A Vontade de Esfolar uma Buceta", "Reprodução Assexuada", "O Crescimento Comicamente Rápido", "O Curso", "O PIB da Zâmbia Bruto", "Caos", "O Amor Não Recíproco", "O Medo Constante do Fracasso", "Carlos", "A Morena", "Depressão2", "vazio", "vazio", "vazio"],
-    '3': ["Disjuntor", "Barragem de lil brumado", "Excalibur", "Muralha da China", "Wifi", "Avião do Mercado Livre", "Uno com Escadas", "Robô de arco e flecha da Coreia do Sul", "Mac do Carros", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"],
-    '4': ["Hun Manet", "Pol Pot", "Benito Mussolini", "Trump", "Gen. Costa e Silva", "Qin Shi", "Bolsonaro", "Ousama Bilanden", "Rainha Elizabeth", "Enéias", "Joana d'Arc", "vazio", "vazio", "vazio", "vazio"],
-    '5': ["Van Gogh", "Filósofo Píton", "Charles Darwin", "Newton", "Schrödinger", "Nietzsche", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"], 
-    '6': ["Chtullhu", "Eterna", "Dionisio", "Noé", "Hermes", "Papai Noel", "Gilgamesh", "Tanatos", "Anubis", "Moisés", "Adão", "Zéfiro", "Tupã", "Wukong", "vazio"],
-    '7': ["Espinosauro", "Gorila", "Rinoceronte", "Papa Léguas", "Gato a Jato", "Pelé (O animal)", "Avestruz", "Boto Cor de Rosa", "Tina T-Rex", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"], 
-    '8': ["Daronco", "Popó", "Ramon Dino", "Wilton Pereira Sampaio", "Bobby Charlton", "Yusuf Dikec", "Airtonmar", "Lukaku", "Emiliano Sala", "George Best", "El Merdinha", "Al Fodão", "Cecilho Jamal", "vazio", "vazio"],
-    '9': ["P.diddy", "Kid Bengala", "Cariane Walter White", "Dr. Zacharias Kalil", "Terry Crews", "Luva de Pedreiro", "Michael Jackson", "Celso Portiolli", "Elvis Presley", "Thais Carla de biquíni", "vazio", "vazio", "vazio", "vazio", "vazio"], 
-    '10': ["Yamato", "Inumaki", "Acnologia", "Magneto", "Jin Mori", "Mine Dio Brando", "Yugi", "Madara", "Takezo", "Reinhard", "Mística", "Gelado", "O Dragão Supremo de Olhos Azuis", "Roniejo", "vazio"], 
-    '11': ["Homerzila", "Bonequinha do Round 6", "Sugilite", "Tamatoa", "Chapolin Colorado", "Djin Djarin", "Barbie", "Máximo", "Sharkboy", "Anakin Skywalker", "Darth Jar Jar", "Jogador 456", "Chaves", "Penny Fitzgerald", "vazio"],
-    '12': ["Reptile", "Blanka", "E-Honda", "Donkey Kong", "El Primo", "Mineirinho", "Steve", "Enderman", "Herobrine", "Doodieman", "vazio", "vazio", "vazio", "vazio", "vazio"],
-    '13': ["Valdo", "Mikaio", "Zuletinha", "Alfa Omega", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio", "vazio"]
+    '2': ["O Conceito de Fusão", "A Vontade de Esfolar uma Buceta", "Reprodução Assexuada", "O Crescimento Comicamente Rápido", "O Curso", "O Amor Platônico de forma tão saudável quanto pode ser", "Caos", "O Amor Não Recíproco", "O Medo Constante do Fracasso", "Carlos", "A Morena", "Depressão2", "A ordem dada pela cônjuge", "O verso Perfeito", "Um arrombamento"],
+    '3': ["Disjuntor", "Barragem de lil brumado", "Excalibur", "Muralha da China", "Wifi", "Avião do Mercado Livre", "Uno com Escadas jogando uno em uma escada", "Computador Quântico", "Mac do Carros", "Município de Ouvidor", "Ilha de Pelé Transmigrada de Vanuatu para o Uruguai com um vulcão ativo", "Uma Cadeira", "Um Ônibus estacionado", "Um gol em sobreposição quântica entre ser bolinha ou quadrado", "Constantinopla"],
+    '4': ["Hun Manet", "Pol Pot", "Benito Mussolini", "Trump", "Gen. Costa e Silva", "Qin Shi", "Bolsonaro", "Ousama Bilanden", "Rainha Elizabeth", "Enéias", "Joana d'Arc", "Dr. Zacharias Kalil", "Lula", "Collor", "Angela Merkel"],
+    '5': ["Van Gogh", "Filósofo Píton", "Charles Darwin", "Newton", "Schrödinger", "Nietzsche", "Platão", "Sócrates", "Aristóteles", "Søren Kierkegaard", "Paulo Freire", "Louis Pasteur", "Freud", "René Descartes", "Nicolau Copérnico"], 
+    '6': ["Chtullhu", "Saci Pererê", "Dionisio", "Noé", "Hermes", "Papai Noel", "Gilgamesh", "Tanatos", "Anubis", "Moisés", "Adão", "Zéfiro", "Tupã", "Wukong", "O Deus das Abelhas"],
+    '7': ["Espinosauro", "Gorila", "Rinoceronte", "Papa Léguas", "Gato a Jato", "Pelé (O animal)", "Avestruz", "Boto Cor de Rosa", "Tina T-Rex", "Máximo (Eu sou o máximo)", "Tilápia", "Jake (Hora de Aventura)", "Dwarg", "Sheldon", "Dwolf"], 
+    '8': ["Daronco", "Popó", "Ramon Dino", "Wilton Pereira Sampaio", "Pep Guardiola", "Yusuf Dikec", "Airtonmar", "Lukaku", "Emiliano Sala", "George Best", "Chay", "Neymar Hipotético", "Vitor Sexo Rodrigues", "Dragolino", "PAI ADSON BATISTA"],
+    '9': ["P.diddy", "Kid Bengala", "Cariane Walter White", "Alexandre Frota", "Terry Crews", "Luva de Pedreiro", "Michael Jackson", "Celso Portiolli", "Elvis Presley", "Thais Carla de biquíni", "Belle Velhinha", "Ariano Suassuna", "Eike Batista", "Jorge Paulo Lemman e seu patrimônio", "JazzGhost"], 
+    '10': ["Batman", "Inumaki", "Acnologia", "Magneto", "Jin Mori", "Naruto Uzandocraki", "Mutano", "Madara", "Takezo", "Reinhard", "Mística", "Gelado", "O Dragão Supremo de Olhos Azuis", "Roniejo", "Hulk"], 
+    '11': ["Homerzila", "Bonequinha do Round 6", "Sugilite", "Tamatoa", "Chapolin Colorado", "Djin Djarin", "Barbie", "Johnny Bravo", "Sharkboy", "Anakin Skywalker", "Darth Jar Jar", "Jogador 456", "Chaves", "Penny Fitzgerald", "Titio Avô"],
+    '12': ["Reptile", "Blanka", "E-Honda", "Donkey Kong", "El Primo", "Mineirinho", "Steve", "Enderman", "Herobrine", "Doodieman", "CR7 de FACÃO", "Messi Careca", "AMOGUS", "O Guarda do Subway Surfers", "Kratos"],
+    '13': ["Eterna", "Mikaio", "Zuletinha", "Alfa Omega", "Cecilho Jamal", "Al Fodão", "El Merdinha", "Mini dio Brando", "Suzana", "O mascote da Atlética", "O conceito de ir trancar essa Porra! ", "O PIB da Zâmbia Bruto", "Anti-Palestino", "O Carlos", "A Homossexualidade dentro do CEPI"]
 };
 
 const estadoDraft = {};
