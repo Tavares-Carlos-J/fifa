@@ -79,21 +79,21 @@
 /* Time Rambiassu - Azul Forte */
 .celula-jogador.time-rambiassu {
     border-color: #3333ff;
-    color: #FFFFFF;
+    color: #3333ff;
     box-shadow: inset 0px 0px 15px rgba(51, 51, 255, 0.3);
 }
 
 /* Time Rambiassa - Lilás Suave */
 .celula-jogador.time-rambiassa {
     border-color: #d7b4ff;
-    color: #FFFFFF;
+    color: #d7b4ff;
     box-shadow: inset 0px 0px 15px rgba(215, 180, 255, 0.1);
 }
 
 /* Time Itapuri - Laranja Escuro */
 .celula-jogador.time-itapuri {
     border-color: #ff8c00;
-    color: #FFFFFF;
+    color: #ff8c00;
     box-shadow: inset 0px 0px 15px rgba(255, 140, 0, 0.1);
 }
 /* Menu Dropdown de Opções */
